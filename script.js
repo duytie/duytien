@@ -7,9 +7,9 @@ const questionPrompt = document.querySelector(".question-prompt");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Tuyệt quá, em đồng ý rồi 😁😁😁😁";
-  question.style.fontSize = "30px"; 
+  question.style.fontSize = "20px"; 
   gif.src = "https://anhdephd.vn/wp-content/uploads/2022/05/hinh-gif-cam-on-de-thuong.gif";
-  gif.style.width = "500px";  // Ảnh sẽ tự động điều chỉnh kích thước theo CSS
+  gif.style.width = "400px";  // Ảnh sẽ tự động điều chỉnh kích thước theo CSS
   gif.style.height = "auto";
   // Ẩn cả hai nút Yes và No
   yesBtn.style.display = "none";
