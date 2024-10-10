@@ -9,7 +9,8 @@ yesBtn.addEventListener("click", () => {
   question.innerHTML = "tuyệt quá e đồng ý rồi 😁😁😁😁";
   gif.src =
     "https://anhdephd.vn/wp-content/uploads/2022/05/hinh-gif-cam-on-de-thuong.gif";
-
+  gif.style.width = "1000px";  // hoặc kích thước mà bạn mong muốn
+  gif.style.height = "auto";  // để đảm bảo tỷ lệ khung hình không bị méo
   // Ẩn cả hai nút Yes và No
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
