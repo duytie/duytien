@@ -8,7 +8,7 @@ const questionPrompt = document.querySelector(".question-prompt"); // Thêm đo�
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "tuyệt quá e đồng ý rồi 😁😁😁😁";
   gif.src =
-    "https://tenor.com/vi/view/dancing-cat-dance-cat-cat-meme-chinese-cat-gif-7364280193643012451";
+    "https://anhdephd.vn/wp-content/uploads/2022/05/hinh-gif-cam-on-de-thuong.gif";
 
   // Ẩn cả hai nút Yes và No
   yesBtn.style.display = "none";
