@@ -7,17 +7,14 @@ const questionPrompt = document.querySelector(".question-prompt");
 
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Tuyệt quá, em đồng ý rồi 😁😁😁😁";
+  question.style.fontSize = "30px"; 
   gif.src = "https://anhdephd.vn/wp-content/uploads/2022/05/hinh-gif-cam-on-de-thuong.gif";
-
-  // Cập nhật kích thước hình ảnh
-  gif.style.width = "auto";  // Tự động điều chỉnh chiều rộng
-  gif.style.maxWidth = "100%";  // Giới hạn chiều rộng tối đa để không vượt quá chiều màn hình
-  gif.style.height = "auto";  // Giữ nguyên tỷ lệ khung hình
-
+  gif.style.width = "500px";  // Ảnh sẽ tự động điều chỉnh kích thước theo CSS
+  gif.style.height = "auto";
   // Ẩn cả hai nút Yes và No
   yesBtn.style.display = "none";
   noBtn.style.display = "none";
-  questionPrompt.style.display = "none"; // Ẩn dòng chữ khi người dùng nhấn vào nút Yes
+  questionPrompt.style.display = "none";
 });
 
 noBtn.addEventListener("mouseover", () => {
@@ -28,8 +25,6 @@ noBtn.addEventListener("mouseover", () => {
   const randomX = Math.floor(Math.random() * maxX);
   const randomY = Math.floor(Math.random() * maxY);
 
-  // Cập nhật vị trí của nút "Không đồng ý"
-  noBtn.style.position = "absolute"; // Đảm bảo nút có thể di chuyển tự do
   noBtn.style.left = randomX + "px";
   noBtn.style.top = randomY + "px";
 });
